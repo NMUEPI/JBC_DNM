@@ -4,6 +4,8 @@ source("JBC_DNM_func.r")
 
 library(data.table)
 library(parallel)
+library(dplyr)
+library(mediation)
 
 # ====================================================================
 # Notes:
@@ -14,6 +16,15 @@ library(parallel)
 # ====================================================================
 
 dnm_jbc_input <- read.delim("dnm_jbc_input.txt",h=T)
+
+dnm_jbc_input <- dnm_jbc_input %>% mutate(
+	ART_stage = relevel(factor(ART_stage), ref = "Cleavage"),
+	ART_type = relevel(factor(ART_type), ref = "IVF"),
+	Embryo = relevel(factor(Embryo), ref = "Fresh"),
+	Trigger = relevel(factor(Trigger), ref = "Single hCG (high)"),
+	OI_regimen = relevel(factor(OI_regimen), ref = "GnRHa"),
+	Conception = relevel(factor(Conception), ref = "SP")
+)
 
 # ====================================================================
 # Part 1. Association between parental age and parental-origin DNMs
