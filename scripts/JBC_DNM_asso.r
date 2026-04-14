@@ -206,7 +206,7 @@ rbindlist(lapply(phenoname_binary, function(p) {
 	res
 }), fill = TRUE)
 
-phenoname_continous <- c("GW","bw_kg")
+phenoname_continous <- c("GW","bw_100g")
 
 rbindlist(lapply(phenoname_continous, function(p) {
 	res <- generate_multi_linear_digit3(dnm_jbc_input, covar_list, covar_class, covar_name, p)[1,] # Row 1 corresponds to average parental age
@@ -228,7 +228,7 @@ rbindlist(lapply(phenoname_binary, function(p) {
 	res
 }), fill = TRUE)
 
-phenoname_continous <- c("GW","bw_kg")
+phenoname_continous <- c("GW","bw_100g")
 
 rbindlist(lapply(phenoname_continous, function(p) {
 	res <- generate_multi_linear_digit3(dnm_jbc_input, covar_list, covar_class, covar_name, p)[5,] # Row 5 corresponds to Conception type
@@ -254,7 +254,7 @@ rbindlist(lapply(vars, function(v) {
 	}), fill = TRUE)
 }), fill = TRUE)
 
-phenoname_continous <- c("GW","bw_kg")
+phenoname_continous <- c("GW","bw_100g")
 
 rbindlist(lapply(vars, function(v) {
 	rbindlist(lapply(phenoname_continous, function(p) {
