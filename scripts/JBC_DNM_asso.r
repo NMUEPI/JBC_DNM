@@ -13,6 +13,8 @@ library(parallel)
 # 4. Reference category = first level of factor variables
 # ====================================================================
 
+dnm_jbc_input <- read.delim("dnm_jbc_input.txt",h=T)
+
 # ====================================================================
 # Part 1. Association between parental age and parental-origin DNMs
 # ====================================================================
