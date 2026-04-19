@@ -38,8 +38,8 @@ covar_name = c("Maternal age","Paternal age")
 
 # Outcomes (paternal-origin DNMs)
 
-pheno_Ps = c("dSNVP","dIndelP","DNMP",paste0("dSNVP_",c("TG","TC","TA","CA","CG","CT_CpG","CT_nCpG")))
-pheno_Ms = c("dSNVM","dIndelM","DNMM",paste0("dSNVM_",c("TG","TC","TA","CA","CG","CT_CpG","CT_nCpG")))
+pheno_Ps = c("dSNVP","dIndelP","DNMP"))
+pheno_Ms = c("dSNVM","dIndelM","DNMM"))
 
 rbindlist(lapply(pheno_Ps, function(p) {
     res_art <- generate_multi_linear(dnm_jbc_input,covar_list,covar_class,covar_name,p)
