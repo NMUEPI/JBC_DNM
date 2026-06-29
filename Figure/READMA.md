@@ -26,7 +26,6 @@ The scripts generate summary tables, regression results, and manuscript figures 
 
 ## Usage
 
-Individual figure scripts can be run separately after the required input objects and helper functions are loaded:
 ```r
 source("DNM_mutclass_barplot.r")
 source("DNM_mutclass_heatmap.r")
