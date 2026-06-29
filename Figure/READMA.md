@@ -1,7 +1,3 @@
-# Analysis of De Novo Mutations from Trio-based Whole-genome Sequencing
-
-This repository contains R scripts used to analyze de novo mutations (DNMs) identified from trio-based whole-genome sequencing data. The analyses focus on parental-origin DNMs, embryonic post-zygotic mutations (EPZMs), parental age, assisted reproductive technology (ART), and mutation-spectrum differences.
-
 ## Overview
 
 The scripts generate summary tables, regression results, and manuscript figures for DNM analyses. Most analyses are implemented in R using Fisher's exact tests, linear regression, restricted cubic spline models, and formatted forest plots.
