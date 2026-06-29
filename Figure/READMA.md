@@ -16,21 +16,15 @@ The scripts generate summary tables, regression results, and manuscript figures 
 
 | File | Description |
 | --- | --- |
-| `DNM_analysis_final.r` | Main analysis script. Reads DNM datasets, generates figures and figure-related results. |
-| `DNM_mutclass_barplot.r` | Generates Figure 1B: comparison of mutation-class proportions among paternal DNMs, maternal DNMs, and EPZMs using Fisher's exact tests. |
-| `DNM_mutclass_heatmap.r` | Generates Figure 1C: trinucleotide-context comparison and enrichment heatmap for parental-origin DNMs and EPZMs. |
-| `age_linear_fig.r` | Generates Figure 2A: linear association between parental age at conception and standardized DNM counts. |
-| `age_mutclass_fig.r` | Generates Figure 2B: mutation-type-specific maternal and paternal age effects. |
-| `age_RCS_fig.r` | Generates Figure 2C: restricted cubic spline analysis of maternal age and maternal-origin dnSNVs. |
-| `ART_boxplot.r` | Generates Figure 3A: violin/box plots comparing standardized dnSNV burden between ART and naturally conceived groups. |
+| `DNM_mutclass_barplot.r` | Comparison of mutation-class proportions among paternal DNMs, maternal DNMs, and EPZMs using Fisher's exact tests. |
+| `DNM_mutclass_heatmap.r` | Trinucleotide-context comparison and enrichment heatmap for parental-origin DNMs and EPZMs. |
+| `age_linear_fig.r` | Linear association between parental age at conception and standardized DNM counts. |
+| `age_mutclass_fig.r` | Mutation-type-specific maternal and paternal age effects. |
+| `age_RCS_fig.r` | Restricted cubic spline analysis of maternal age and maternal-origin dnSNVs. |
+| `ART_boxplot.r` | Violin/box plots comparing standardized dnSNV burden between ART and naturally conceived groups. |
 | `forest_fig.r` | Provides helper functions to prepare and draw forest plots from regression summary tables. |
 
 ## Usage
-
-Run the main analysis script from the project analysis directory:
-```r
-source("DNM_analysis_final.r")
-```
 
 Individual figure scripts can be run separately after the required input objects and helper functions are loaded:
 ```r
